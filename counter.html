@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let count = 0;
+    function dec() {
+        if (count == 0) return
+        count = count - 1
+        document.getElementById("count_text").innerHTML = count
+    }
+    function inc() {
+        count = count + 1
+        document.getElementById("count_text").innerHTML = count
+    }
+</script>
+
+<body>
+    <button onclick="dec()">-</button>
+    <span id="count_text">0</span>
+    <button onclick="inc()">+</button>
+</body>
+
+</html>
